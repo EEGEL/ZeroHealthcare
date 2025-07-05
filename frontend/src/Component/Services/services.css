@@ -1,0 +1,38 @@
+/* services.css */
+
+.services-container {
+  padding: 4rem 5%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 12px;
+}
+
+.services-container h3 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.services-wrapper {
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+/* .services-container {
+    background-color: rgba(62, 161, 255, 0.04);
+}
+
+.services-container>h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 42px;
+}
+
+.services-wrapper {
+    display: flex;
+    gap: 42px;
+    flex-wrap: wrap;
+    justify-content: center;
+} */

@@ -1,0 +1,161 @@
+
+/* doctors.css */
+
+.doctors-container {
+  position: relative;
+  padding: 4rem 5% 3rem;
+background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  overflow: hidden;
+}
+
+.doctors-container h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.doctors-container p {
+  font-size: 1rem;
+color: var(--text-color);
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+/* Sphere background images */
+.sphere2, .sphere3 {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.sphere2 {
+  top: 0;
+  left: 0;
+  width: 150px;
+}
+
+.sphere3 {
+  bottom: 0;
+  right: 0;
+  width: 120px;
+}
+
+/* Doctor list area */
+.doctors-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Explore More button */
+.doctors-container button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.doctors-container button:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.3);
+}
+
+/* ---------- Responsive Layout ---------- */
+@media (max-width: 768px) {
+  .doctors-container h3 {
+    font-size: 1.7rem;
+  }
+
+  .doctors-container p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .sphere2 {
+    width: 100px;
+  }
+
+  .sphere3 {
+    width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctors-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .doctors-container p {
+    font-size: 0.9rem;
+  }
+
+  .doctors-container button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+
+/* .doctors-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.doctors-container>h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.doctors-container>p {
+    text-align: center;
+    color: #5C5C5C;
+}
+
+.sphere2, .sphere3 {
+    position: absolute;
+    z-index: -1;
+}
+
+.sphere2 {
+    left: -28px;
+    top: 77px;
+}
+
+.sphere3 {
+    right: 0;
+    top: 250px;
+}
+
+.doctors-wrapper {
+    padding: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+    justify-content: center;
+}
+
+.doctors-container>button {
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #174EB2;
+    background-color: #FFF;
+    border: 1px solid #174EB2;
+}
+
+.doctors-container>button:hover {
+    color: #FFF;
+    background-color: #174EB2;
+} */

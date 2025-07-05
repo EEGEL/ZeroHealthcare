@@ -1,0 +1,94 @@
+/* doctor.css */
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem 5%;
+  background-color: #f8fbff;
+}
+
+.doctor-container {
+background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.doctor-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.doctor-details h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #007bff;
+}
+
+.doctor-details p {
+  font-size: 0.95rem;
+color: var(--text-color);
+  margin-top: 0.25rem;
+}
+
+/* Responsive tweaks (optional if needed) */
+@media (max-width: 480px) {
+  .doctor-details h6 {
+    font-size: 1rem;
+  }
+
+  .doctor-details p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+/* .doctor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.doctor-container:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.1);
+}
+
+.doctor-image>img {
+    width: 310px;
+    height: 348px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.doctor-details {
+    text-align: start;
+}
+
+.doctor-details>h6 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.doctor-details>p {
+    font-size: 14px;
+    color: #5C5C5C;
+} */

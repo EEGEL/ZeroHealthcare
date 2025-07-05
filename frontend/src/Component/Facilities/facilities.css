@@ -1,0 +1,176 @@
+/* facilities.css */
+
+.facilities-container {
+  padding: 4rem 5%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.facilities-container h3 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+/* Flex layout for content */
+.facilities-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left side: text */
+.facility-details {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.facility-detail-head h6 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.facility-detail-body p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.facility-detail-button button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.facility-detail-button button:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.3);
+}
+
+/* Right side: images */
+.facility-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  min-width: 280px;
+}
+
+.facility-images img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .facilities-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .facility-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .facility-images img {
+    max-width: 45%;
+  }
+
+  .facility-detail-head h6 {
+    font-size: 1.3rem;
+  }
+
+  .facility-detail-body p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .facility-images img {
+    max-width: 100%;
+  }
+
+  .facility-detail-button button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+/* .facilities-container {
+    margin-top: 100px;
+    padding: 0 66px;
+}
+
+.facilities-container>h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 140px;
+}
+
+.facilities-wrapper {
+    display: flex;
+    gap: 68px;
+}
+
+.facility-details {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.facility-detail-head>h6 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.facility-detail-body>p {
+    width: 42vw;
+    text-align: start;
+    color: #5C5C5C;
+}
+
+.facility-detail-button>button {
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #174EB2;
+    color: #FFF;
+}
+
+.facility-images {
+    position: relative;
+}
+
+.facility1, .facility2 {
+    width: 365px;
+    height: 349px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.facility2 {
+    position: absolute;
+    right: -160px;
+    bottom: 120px;
+    z-index: -1;
+} */

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg: #f3f3f3;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+}
+
+.dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1f1f1f;
+  --button-bg: #339af0;
+  --button-hover: #228be6;
+}
+
+/* Make sure body uses the variables! */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}

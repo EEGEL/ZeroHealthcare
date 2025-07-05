@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.05);
+  --primary: #007bff;
+  --primary-hover: #0056b3;
+  --footer-bg: #1379d8; /* Light mode footer background */
+}
+
+.dark {
+  --bg-color: #121212;
+  --text-color: #e1e1e1;
+  --card-bg: #1e1e1e;
+  --card-shadow: rgba(0, 0, 0, 0.5);
+  --primary: #4dabf7;
+  --primary-hover: #339af0;
+  --footer-bg: #1f1f1f; /* Dark mode footer background */
+
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Example for cards/buttons — replace hardcoded colors with variables */
+.service-container {
+  background: var(--card-bg);
+  box-shadow: 0 8px 16px var(--card-shadow);
+}
+.primary-btn {
+  background: var(--primary);
+}
+.primary-btn:hover {
+  background: var(--primary-hover);
+}

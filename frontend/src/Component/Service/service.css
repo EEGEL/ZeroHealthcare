@@ -1,0 +1,62 @@
+/* service.css */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 3rem 5%;
+  background-color: #f9fcff;
+  justify-items: center;
+}
+
+.service-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.service-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 30px rgba(0, 123, 255, 0.2);
+}
+
+.service-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.service-head h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.service-body p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Responsive layout */
+@media (max-width: 768px) {
+  .service-container {
+    padding: 1rem;
+  }
+}
