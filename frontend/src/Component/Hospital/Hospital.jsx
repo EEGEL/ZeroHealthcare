@@ -6,15 +6,21 @@ const HospitalPage = () => {
   const [hospitals, setHospitals] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/hospitals")
+    fetch("http://127.0.0.1:5000/hospitals")
       .then((res) => res.json())
-      .then((data) => setHospitals(data))
+      .then((data) => {
+      console.log("Fetched hospitals:", data);
+      setHospitals(data);
+    })
       .catch((err) => console.error("Error fetching hospitals:", err));
   }, []);
 
-  const filteredHospitals = hospitals.filter((hospital) =>
-    hospital.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+const filteredHospitals = hospitals.filter(
+  (hospital) =>
+    hospital?.hospital_id?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    hospital?.city?.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
 
   return (
     <div className="hospital-page-container">
@@ -30,9 +36,14 @@ const HospitalPage = () => {
       <div className="hospital-list">
         {filteredHospitals.length > 0 ? (
           filteredHospitals.map((hospital) => (
-            <div key={hospital.id} className="hospital-card">
-              <h3>{hospital.name}</h3>
+            <div key={hospital.hospital_id} className="hospital-card">
+              <h3>{hospital.hospital_name}</h3>
+              <p>{hospital.city}</p>
+              <p>{hospital.contact_num}</p>
+              <p>{hospital.hospital_id}</p>
               <p>{hospital.location}</p>
+              <p>{hospital.pincode}</p>
+              <p>{hospital.state}</p>
               <button className="view-more-btn">View Details</button>
             </div>
           ))
